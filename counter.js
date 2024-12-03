@@ -1,3 +1,6 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 export function setupCounter(element) {
 	let counter = 0;
 	const setCounter = (count) => {

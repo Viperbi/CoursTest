@@ -1,3 +1,5 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./style.css";
 import javascriptLogo from "./javascript.svg";
 import viteLogo from "/vite.svg";
@@ -22,20 +24,3 @@ document.querySelector("#app").innerHTML = `
 `;
 
 setupCounter(document.querySelector("#counter"));
-
-function addition(num1, num2) {
-	return num1 + num2;
-}
-
-function calculate() {
-	let firstNumber = parseFloat(document.getElementById("firstNumber").value);
-	let secondNumber = parseFloat(
-		document.getElementById("secondNumber").value
-	);
-
-	let result = addition(firstNumber, secondNumber);
-
-	document.getElementById("result").innerText = result;
-}
-let btn = document.querySelector("#calculBtn");
-btn.addEventListener("click", calculate);
