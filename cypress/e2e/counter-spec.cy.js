@@ -1,4 +1,5 @@
 describe("Tests de l'application Counter", () => {
+	beforeEach(() => {});
 	it("devrait afficher un compte initial de 0", () => {
 		cy.visit("http://localhost:5173/");
 		cy.get("#counter").should("have.text", "count is 0");
@@ -46,10 +47,10 @@ describe("Tests de l'application Counter", () => {
 				"https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 			);
 	});
-	/**it("devrait augmenter le compte lors du shift clic de 10", () => {
+	it("devrait augmenter le compte lors du shift clic de 10", () => {
 		cy.visit("http://localhost:5173/");
 		cy.get("body").type("{shift}", { release: false });
 		cy.get("#counter").click();
 		cy.get("#counter").should("have.text", "count is 10");
-	});*/
+	});
 });
